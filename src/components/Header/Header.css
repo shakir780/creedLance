@@ -1,0 +1,143 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    background: #fff;
+   border-bottom: 2px solid gold;
+ 
+    
+}
+.nav__toggler{
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 23px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    display: none;
+}
+.nav__toggler div{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 10px 0;
+    background: black;
+    transition: all 0.5s ease-out;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 4rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 15px;
+}
+.nav__item{
+    font-weight: bold;
+   
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.logo{
+    width: 12rem;
+    
+}
+
+
+.nav__brand{
+margin-left: 2rem;
+display: flex;
+}
+.navbar-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-right: 4rem; */
+}
+.navbar-login a{
+    margin: 0 1.4rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+    color: black;
+    font-family: 'Inter';
+    font-weight: 700;
+}
+.navbar-login div{
+    width: 1px;
+    height: 20px;
+    background-color: #000000;
+}
+.nav-btn{
+    padding: 0.5rem 0.8rem;
+    border: transparent;
+    border-radius: 10%;
+    background-color: gold;
+    color: white;
+}
+
+
+@media screen and (max-width:930px){
+    .logo{
+        width: 9rem;
+        
+    }
+    .nav__toggler{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__menu{
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        height: 100vh;
+        width: 50vw;
+        background: white;
+        flex-direction: column;
+        z-index: 999999;
+        transform: translateX(-100%);
+        transition: 0.5s ease-in;
+        gap: 1rem;
+        
+    }
+    
+    .nav__menu > li{
+        margin: 1.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px dashed gold;
+    }
+    
+    .navbar-login{
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+    .navbar-login div{
+display: none;
+    }
+    .nav__active{
+        transform: translateX(0%);
+    }
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 11px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-7px, -13px);
+    }
+
+    .nav-btn{
+        padding: 0.8rem 0.8rem;
+
+    }
+}

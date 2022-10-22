@@ -1,0 +1,106 @@
+.Scale{
+    border-bottom: 2px solid gold;
+    height: auto;
+}
+.scaleImg{
+    display: flex;
+    flex-direction: column;
+}
+.scaleTxt{
+    width:200px;
+}
+.scaleImg>:nth-child(2){
+    width: 388px;
+}
+.scaleMain{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.scale_heading{
+    font-size: 32.2px;
+    margin: 2rem 10rem;
+    font-weight: 700;
+    line-height: 38.97px;
+}
+
+.scale__mainText {
+    font-size: 20.57px;
+   margin-top: 2rem;
+    margin-left: 9rem;
+  
+  
+    
+}
+
+.scale__mainText span span{
+font-size: 21.96px;
+line-height: 26.58px;
+font-weight: 500;
+}
+.scale__mainText span li{
+    font-size:21px;
+ list-style:square;
+ margin-top: 3rem;
+}
+.skillbtn{
+    text-align: center;
+    
+}
+.skillbtn button{
+    text-align: center;
+    margin:3rem;
+    margin-right: 4rem;
+    padding: 1rem 3rem;
+    background: #DAA520;
+border-radius: 9.13512px;
+border-color: transparent;
+color: white;
+font-size: 21.8px;
+}
+@media screen and (max-width:900px) {
+    
+    .scaleMain{
+flex-direction: column;
+    }
+    .scaleImg{
+        justify-content: center;
+        align-items: center;
+    }
+    .scaleImg>:nth-child(2){
+        width: 200px;
+    }
+    .scale_heading{
+  font-size: 20px;
+margin: 2rem 4rem;  
+    }
+    .scale__mainText{
+       margin: auto;
+    }
+    .scale__mainText span span {
+        font-size: 14px;
+     display: flex;
+     margin: 0 3rem;
+     margin-top: 2rem;
+     justify-content: center;
+     
+    
+    
+    }
+    .scale__mainText span ul{
+margin: 0 3rem;
+    }
+    .scale__mainText span li{
+        font-size:15px;
+   
+    }
+
+
+    .skillbtn button{
+        text-align: center;
+        margin: 0;
+        padding:14px, 37px, 14px, 37px;
+    font-size: 26.8px;
+    margin: 2rem;
+    }
+}
